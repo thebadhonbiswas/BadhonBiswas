@@ -1,31 +1,53 @@
+
 nav {
-  height: 60px;
-  padding: 0 20px;
-  background: red;
+  height: 70px;
+  padding: 0 30px;
+  background: #192049;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Logo and icons */
 nav img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
+/* Menu styling with animation */
 .menu {
   padding: 20px;
   position: absolute;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  right: 0px;
-  top: 60px;
-  background: blue;
+  right: 0; /* Ensure it's aligned with the right edge */
+  top: 70px;
+  background: #6e93f7;
   border-radius: 25px 0 0 25px;
+  box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  max-width: 250px; /* Set a max width to prevent overflow */
 }
 
+/* Show menu when active */
+.menu.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Menu links */
 .menu a {
-  color: #fff;
+  color: #f0f0f0; /* Soft white */
   text-decoration: none;
+  font-size: 20px;
   font-weight: bold;
+  padding: 8px 0;
+  transition: color 0.2s ease-in-out;
+}
+
+.menu a:hover {
+  color: #d4e2ff; /* Lighter blue */
 }

@@ -1,27 +1,36 @@
-import './Navbar.css'
-import logo from '../logo.svg';
+import { useState } from "react";
+import "./Navbar.css";
+import logo from "../assets/logo.svg";
+import menuIcon from "../assets/menu.svg";
+import closeIcon from "../assets/close.svg";
 
-function Nav() {
+const Nav = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
- const navsvg = 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
-  <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-</svg>;
-
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
 
   return (
-  <>
     <nav>
       <img src={logo} alt="navlogo" />
-      <div className="menubar">{navsvg}</div>
-     <div className="menu">
+      <div className="menubar">
+        <img
+          src={menuOpen ? closeIcon : menuIcon}
+          alt="menu-icon"
+          onClick={toggleMenu}
+          role="button"
+          aria-label="Toggle menu"
+          // style={{ cursor: "pointer" }}
+        />
+      </div>
+      <div className={`menu ${menuOpen ? "active" : ""}`}>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
       </div>
     </nav>
-  </>
-  )
-}
+  );
+};
 
 export default Nav;
