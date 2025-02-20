@@ -1,5 +1,5 @@
 :root {
-  --dark-blue: #02023e;
+  --dark-blue: rgba(255,255,255,0)/* #02023e */;
   --blue: #180a7f;
   --light-blue: #00B4D8;
   --pale-blue: #90E0EF;
@@ -47,3 +47,15 @@ code {
     monospace;
 }
 
+FlowingMenu {
+  height: 400px;
+  padding: 0 24px;
+}
+
+.bg {
+  top: 0;
+  height: 2000px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}

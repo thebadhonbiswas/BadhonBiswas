@@ -1,3 +1,6 @@
+import LetterGlitch from './components/LetterGlitch/LetterGlitch';
+import InfiniteMenu from './components/InfiniteMenu/InfiniteMenu';
+import Skills from './components/Skills/Skills';
 import Gallery from './components/Gallery/Gallery';
 import Stack from './components/Stack/Stack';
 import React from 'react';
@@ -9,11 +12,54 @@ import Nav from './components/Navbar/Navbar.js'
 import Header from './components/Header/Header.js'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const items = [
+  {
+    image: 'https://picsum.photos/300/300?grayscale',
+    link: 'https://google.com/',
+    title: 'Item 1',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://picsum.photos/400/400?grayscale',
+    link: 'https://google.com/',
+    title: 'Item 2',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://picsum.photos/500/500?grayscale',
+    link: 'https://google.com/',
+    title: 'Item 3',
+    description: 'This is pretty cool, right?'
+  },
+  {
+    image: 'https://picsum.photos/600/600?grayscale',
+    link: 'https://google.com/',
+    title: 'Item 4',
+    description: 'This is pretty cool, right?'
+  }
+];
+
+
 root.render(
   <React.StrictMode>
     <Nav />
     <Header />
     <Gallery />
+    <Skills />
+    <div style={{ height: '600px', position: 'relative' }}>
+     <InfiniteMenu items={items}/>
+    </div>
+    
+    <div className="bg">
+<LetterGlitch
+
+  glitchSpeed={50}
+  centerVignette={true}
+  outerVignette={false}
+  smooth={true}
+/>
+    </div>
+    
   </React.StrictMode>
 );
 
