@@ -1,10 +1,11 @@
 :root {
-  --dark-blue: #03045E;
-  --blue: #0077B6;
+  --dark-blue: #02023e;
+  --blue: #180a7f;
   --light-blue: #00B4D8;
   --pale-blue: #90E0EF;
   --very-light-blue: #CAF0F8;
 }
+
 
 body {
   background-color: var(--very-light-blue);
@@ -13,12 +14,12 @@ body {
 
 nav {
   color: var(--very-light-blue);
-  background-color: var(--dark-blue);
+  background-color: var(--blue);
 }
 
 
 header {
-  background-color: var(--blue);
+  background-color: var(--dark-blue);
   color: white;
 }
 
@@ -45,3 +46,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+

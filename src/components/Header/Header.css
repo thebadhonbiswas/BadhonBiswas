@@ -1,0 +1,61 @@
+/* Importing the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+.header {
+  height: 91vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.herotxt {
+  margin-top: 90px;
+  width: 94vw;
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.h {
+background: linear-gradient(45deg, #2b93ef, #5155c9,#b81bb5);
+-webkit-background-clip: text;
+  color: transparent;
+}
+
+.container div {
+  background: red;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+
+.container {
+  width: 94vw;
+  height: 330px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 1st box 1fr, 2nd box 2fr, 3rd box 1fr */
+  grid-template-rows: auto; /* Row height automatically adjusts */
+  gap: 12px;
+}
+
+.box1 {
+  grid-column: 1; /* First box spans the first column */
+  grid-row: span 2; /* Box1 spans both rows */
+}
+
+.box2 {
+  grid-column: 2; /* Second box in the first row */
+}
+
+.box3 {
+  grid-column: 2; /* Second box in the second row */
+}
+
+.box4 {
+  grid-column: 4; /* Third box in the second row */
+}

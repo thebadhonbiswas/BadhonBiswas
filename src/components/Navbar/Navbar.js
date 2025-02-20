@@ -1,8 +1,8 @@
 import { useState } from "react";
 import "./Navbar.css";
-import logo from "../assets/logo.svg";
-import menuIcon from "../assets/menu.svg";
-import closeIcon from "../assets/close.svg";
+import logo from "../../assets/logo.svg";
+import menuIcon from "../../assets/menu.svg";
+import closeIcon from "../../assets/close.svg";
 
 const Nav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
