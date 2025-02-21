@@ -1,3 +1,4 @@
+import SplashCursor from './components/SplashCursor/SplashCursor';
 import InfiniteMenu from './components/InfiniteMenu/InfiniteMenu';
 import Skills from './components/Skills/Skills';
 import Gallery from './components/Gallery/Gallery';
@@ -43,6 +44,7 @@ const items = [
 root.render(
   <React.StrictMode>
     <div className="bg"></div>
+    <SplashCursor />
     <Nav />
     <Header />
     <Gallery />
