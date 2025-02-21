@@ -52,10 +52,3 @@ FlowingMenu {
   padding: 0 24px;
 }
 
-.bg {
-  top: 0;
-  height: 2000px;
-  width: 100%;
-  position: absolute;
-  z-index: -1;
-}

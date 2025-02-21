@@ -1,4 +1,3 @@
-import LetterGlitch from './components/LetterGlitch/LetterGlitch';
 import InfiniteMenu from './components/InfiniteMenu/InfiniteMenu';
 import Skills from './components/Skills/Skills';
 import Gallery from './components/Gallery/Gallery';
@@ -46,18 +45,8 @@ root.render(
     <Header />
     <Gallery />
     <Skills />
-    <div style={{ height: '600px', position: 'relative' }}>
+    <div style={{ height: '400px', position: 'relative' }}>
      <InfiniteMenu items={items}/>
-    </div>
-    
-    <div className="bg">
-<LetterGlitch
-
-  glitchSpeed={50}
-  centerVignette={true}
-  outerVignette={false}
-  smooth={true}
-/>
     </div>
     
   </React.StrictMode>
