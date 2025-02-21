@@ -1,4 +1,5 @@
-import Stack from '../Stack/Stack';
+import RotatingText from '../RotatingText/RotatingText';
+import SplitText from '../SplitText/SplitText';
 import "./Header.css";
 import React from 'react'
 
@@ -9,12 +10,22 @@ function Header() {
     <div className="herotxt">
     <h1>Hi,<br/>I'm
     <span className="h"> Badhon</span><br/>
-    Developer</h1>
+    <RotatingText
+    texts={['Developer', 'UI Designer', 'Editor', 'Creator']}
+    staggerDuration={0.1} 
+    rotationInterval={4000} />
+    </h1>
+    <SplitText 
+    text="Innovating responsive web solutions."
+    delay="70"
+    textAlign="left"
+    />
+
     </div>
     <div className="container">
-    <div className="box1">1</div>
+    <div className="box1"></div>
     <div className="box2"></div>
-    <div className="box3">3</div>
+    <div className="box3"></div>
     </div>
     </header>
   </>

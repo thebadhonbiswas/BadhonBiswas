@@ -1,15 +1,19 @@
 :root {
-  --dark-blue: rgba(255,255,255,0)/* #02023e */;
+  --dark-blue: #02023e;
   --blue: #180a7f;
   --light-blue: #00B4D8;
   --pale-blue: #90E0EF;
   --very-light-blue: #CAF0F8;
 }
 
-
-body {
-  background-color: var(--very-light-blue);
-  color: var(--dark-blue);
+.bg {
+  background: var(--dark-blue);
+  width: 100%;
+  height: 2000px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
 }
 
 nav {
@@ -18,22 +22,14 @@ nav {
 }
 
 
-header {
-  background-color: var(--dark-blue);
-  color: white;
-}
-
 button {
   background-color: var(--light-blue);
   color: white;
 }
 
-footer {
-  background-color: var(--pale-blue);
-  color: var(--dark-blue);
-}
 
 body {
+  color: #fff;
   margin: 0;
   font-family:'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

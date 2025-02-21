@@ -41,6 +41,7 @@ const items = [
 
 root.render(
   <React.StrictMode>
+    <div className="bg"></div>
     <Nav />
     <Header />
     <Gallery />
