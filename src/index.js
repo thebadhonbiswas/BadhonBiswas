@@ -43,9 +43,7 @@ const items = [
 
 root.render(
   <React.StrictMode>
-    <div className="bg">
-    <SplashCursor />
-    </div>
+    <div className="bg"></div>
     <Nav />
     <Header />
     <Gallery />
