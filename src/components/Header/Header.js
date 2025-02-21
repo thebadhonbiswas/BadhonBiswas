@@ -28,7 +28,9 @@ function Header() {
     <div className="box2">
     <img src="https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/1.jpg" alt="" width="50px" />
     <p>@badhonraj</p>
+    <a href="https://www.instagram.com/badhonbiswas.raj">
     <button>Follow</button>
+    </a>
     </div>
     <div className="box3">
     <h3>Followers</h3>
