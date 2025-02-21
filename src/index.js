@@ -7,10 +7,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import '@fontsource/outfit';
-import Nav from './components/Navbar/Navbar.js'
-import Header from './components/Header/Header.js'
+import Nav from './components/Navbar/Navbar.js';
+import Header from './components/Header/Header.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 const items = [
   {
     image: 'https://picsum.photos/300/300?grayscale',
@@ -47,13 +48,9 @@ root.render(
     <Gallery />
     <Skills />
     <div style={{ height: '400px', position: 'relative' }}>
-     <InfiniteMenu items={items}/>
+      <InfiniteMenu items={items} />
     </div>
-    
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

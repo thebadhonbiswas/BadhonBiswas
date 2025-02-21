@@ -1,3 +1,4 @@
+import CountUp from '../CountUp/CountUp';
 import RotatingText from '../RotatingText/RotatingText';
 import SplitText from '../SplitText/SplitText';
 import "./Header.css";
@@ -24,8 +25,23 @@ function Header() {
     </div>
     <div className="container">
     <div className="box1"></div>
-    <div className="box2"></div>
-    <div className="box3"></div>
+    <div className="box2">
+    <img src="https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/1.jpg" alt="" width="50px" />
+    <p>@badhonraj</p>
+    <button>Follow</button>
+    </div>
+    <div className="box3">
+    <h3>Followers</h3>
+    <CountUp
+    from={0}
+    to={10000}
+    separator=","
+    direction="up"
+    duration={0.7}
+    className="count-up-text"
+    />
+
+    </div>
     </div>
     </header>
   </>
