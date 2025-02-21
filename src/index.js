@@ -1,4 +1,3 @@
-import SplashCursor from './components/SplashCursor/SplashCursor';
 import InfiniteMenu from './components/InfiniteMenu/InfiniteMenu';
 import Skills from './components/Skills/Skills';
 import Gallery from './components/Gallery/Gallery';
