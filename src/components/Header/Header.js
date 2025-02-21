@@ -1,3 +1,4 @@
+import Particles from '../Particles/Particles';
 import CountUp from '../CountUp/CountUp';
 import RotatingText from '../RotatingText/RotatingText';
 import SplitText from '../SplitText/SplitText';
@@ -8,6 +9,16 @@ function Header() {
   return (
   <>
     <header className="header">
+  <Particles
+    particleColors={['#fea9ff', '#b9b9b9']}
+    particleCount={230}
+    particleSpread={10}
+    speed={0.1}
+    particleBaseSize={160}
+    moveParticlesOnHover={false}
+    alphaParticles={false}
+    disableRotation={false}
+  />
     <div className="herotxt">
     <h1>Hi,<br/>I'm
     <span className="h"> Badhon</span><br/>
@@ -18,7 +29,7 @@ function Header() {
     </h1>
     <SplitText 
     text="Innovating responsive web solutions."
-    delay="70"
+    delay="100"
     textAlign="left"
     />
 
@@ -33,7 +44,7 @@ function Header() {
     </a>
     </div>
     <div className="box3">
-    <h3>Followers</h3>
+    <p>Followers</p>
     <CountUp
     from={0}
     to={10000}
