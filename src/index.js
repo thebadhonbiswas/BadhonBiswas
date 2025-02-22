@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react"
 import InfiniteMenu from './components/InfiniteMenu/InfiniteMenu';
 import Skills from './components/Skills/Skills';
 import Gallery from './components/Gallery/Gallery';
@@ -42,6 +43,7 @@ const items = [
 
 root.render(
   <React.StrictMode>
+    <Analytics />
     <div className="bg"></div>
     <Nav />
     <Header />
