@@ -5,6 +5,7 @@ import SplitText from '../SplitText/SplitText';
 import "./Header.css";
 import React from 'react'
 
+
 function Header() {
   return (
   <>
@@ -35,9 +36,11 @@ function Header() {
 
     </div>
     <div className="container">
-    <div className="box1"></div>
+    <div className="box1"
+    style={{backgroundImage: "url('/6.jpg')"}}
+    ></div>
     <div className="box2">
-    <img src="https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/1.jpg" alt="" width="50px" />
+    <img src="/1.jpg" alt="" width="50px" />
     <p>@badhonraj</p>
     <a href="https://www.instagram.com/badhonbiswas.raj">
     <button>Follow</button>
