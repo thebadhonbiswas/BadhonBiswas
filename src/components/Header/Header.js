@@ -11,7 +11,7 @@ function Header() {
   <>
     <header className="header">
   <Particles
-    particleColors={['#fea9ff', '#b9b9b9']}
+    particleColors={['#0000ff', '#0000ff']}
     particleCount={230}
     particleSpread={10}
     speed={0.1}
