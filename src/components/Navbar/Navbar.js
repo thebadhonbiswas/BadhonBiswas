@@ -21,7 +21,6 @@ const Nav = () => {
           onClick={toggleMenu}
           role="button"
           aria-label="Toggle menu"
-          // style={{ cursor: "pointer" }}
         />
       </div>
       <div className={`menu ${menuOpen ? "active" : ""}`}>

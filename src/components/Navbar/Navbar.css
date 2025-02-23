@@ -4,7 +4,7 @@ nav {
   position: fixed;
   top: 0;
   z-index: 999;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(20px);
   height: 70px;
   display: flex;
@@ -21,25 +21,25 @@ nav img {
 
 /* Menu styling with animation */
 .menu {
-  padding: 20px;
+  padding: 20px 30px;
   position: absolute;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  right: 0; /* Ensure it's aligned with the right edge */
+  right: -50%; /* Ensure it's aligned with the right edge */
   top: 70px;
-  background: #0077B6;
+  border: 2px solid #fff;
   border-radius: 25px 0 0 25px;
+  background: #151515;
   box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.1);
   transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  opacity: 0;
   pointer-events: none;
   max-width: 250px; /* Set a max width to prevent overflow */
 }
 
 /* Show menu when active */
 .menu.active {
-  opacity: 1;
+  right: 0px;
   pointer-events: auto;
 }
 
@@ -47,12 +47,10 @@ nav img {
 .menu a {
   color: #f0f0f0; /* Soft white */
   text-decoration: none;
+  font-family: outfit;
   font-size: 20px;
   font-weight: bold;
-  padding: 8px 0;
+  padding: 8px 4px;
   transition: color 0.2s ease-in-out;
 }
 
-.menu a:hover {
-  color: #d4e2ff; /* Lighter blue */
-}

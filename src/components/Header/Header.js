@@ -12,10 +12,10 @@ function Header() {
     <header className="header">
   <Particles
     particleColors={['#0000ff', '#0000ff']}
-    particleCount={230}
+    particleCount={280}
     particleSpread={10}
     speed={0.1}
-    particleBaseSize={160}
+    particleBaseSize={200}
     moveParticlesOnHover={false}
     alphaParticles={false}
     disableRotation={false}

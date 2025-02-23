@@ -78,7 +78,17 @@ background: linear-gradient(45deg,#8985ff,#ff4949);
 .box2 img {
   width: 50px;
   height: 50px;
+  border: 2px solid #fff;
   border-radius: 100%;
+  box-shadow: 0 0 20px #fff;
+  transition: transform 0.3s ease; 
+}
+
+.box2 img:hover {
+  transform: scale(1);
+}
+.box2 img:active {
+  transform: scale(1.2);
 }
 
 .box2 p {
@@ -93,9 +103,18 @@ button {
   color: #000;
   background: #fff;
   border: 2px solid #f5a4f4;
+  box-shadow: 0 0 20px #f000f6;
   border-radius: 10px;
   position: relative;
   transition: transform 0.3s ease; 
+}
+
+button:hover {
+  transform: scale(1);
+}
+
+button:active {
+  transform: scale(0.8);
 }
 
 .box3 p {
