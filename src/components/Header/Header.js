@@ -24,7 +24,7 @@ function Header() {
     <h1>Hi,<br/>I'm
     <span className="h"> Badhon</span><br/>
     <RotatingText
-    texts={['Developer', 'UI Designer', 'Editor', 'Creator']}
+    texts={['Developer👨🏻‍💻', 'Editor🎥', 'Pro Gamer🎮', 'UI Designer🎨', 'Coder👨🏻‍💻', '🌑🌒🌓🌔🌕']}
     staggerDuration={0.1} 
     rotationInterval={4000} />
     </h1>
@@ -41,8 +41,8 @@ function Header() {
     ></div>
     <div className="box2">
     <img src="/1.jpg" alt="" width="50px" />
-    <p>@badhonraj</p>
-    <a href="https://www.instagram.com/badhonbiswas.raj">
+    <p>@badhontech</p>
+    <a href="https://github.com/badhontech">
     <button>Follow</button>
     </a>
     </div>
