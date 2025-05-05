@@ -35,7 +35,7 @@ root.render(
       <meta property="og:description" content="Explore projects and skills of Badhon Biswas – web developer and designer." />
       <meta property="og:image" content="https://badhonbiswas.vercel.app/previewimg.webp" />
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://badhon.pages.dev/" />
+      <meta property="og:url" content="https://badhonbiswas.vercel.app/" />
 
       {/* Twitter Card Meta */}
       <meta name="twitter:card" content="summary_large_image" />
