@@ -33,7 +33,7 @@ root.render(
       {/* Open Graph Meta */}
       <meta property="og:title" content="Badhon Biswas | Portfolio" />
       <meta property="og:description" content="Explore projects and skills of Badhon Biswas – web developer and designer." />
-      <meta property="og:image" content="https://badhonbiswas.vercel.app/previewimg.webp" />
+      <meta property="og:image" content="https://badhonbiswas.vercel.app/badhon's-portfolio.jpg" />
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://badhonbiswas.vercel.app/" />
 
@@ -41,7 +41,7 @@ root.render(
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Badhon Biswas | Portfolio" />
       <meta name="twitter:description" content="Explore projects and skills of Badhon Biswas – web developer and designer." />
-      <meta name="twitter:image" content="https://badhonbiswas.vercel.app/previewimg.webp" />
+      <meta name="twitter:image" content="https://badhonbiswas.vercel.app/badhon's-portfolio.jpg" />
       <meta name="twitter:image:alt" content="Preview image of Badhon Biswas' portfolio website" />
 
       {/* Favicon and Theme */}
