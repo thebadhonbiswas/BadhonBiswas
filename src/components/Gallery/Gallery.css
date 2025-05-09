@@ -1,5 +1,11 @@
 .gallery {
-  padding: 40px 24px;
-  display: flex;
-  align-items: center;
+  height: 55vh;
+  width: 100%;
+  text-align: center;
+}
+.photos {
+  width: 90vw;
+  height: 40vh;
+  position: relative;
+  left: 30px;
 }

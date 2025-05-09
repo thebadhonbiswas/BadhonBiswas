@@ -6,21 +6,16 @@ import { Helmet } from 'react-helmet';
 import InfiniteMenu from './components/InfiniteMenu/InfiniteMenu';
 import Skills from './components/Skills/Skills';
 import Gallery from './components/Gallery/Gallery';
-import Nav from './components/Navbar/Navbar.js';
-import Header from './components/Header/Header.js';
+import Nav from './components/Navbar/Navbar';
+import Header from './components/Header/Header';
+import About from './components/About/About';
+import Projects from './components/Projects/Projects';
 
 import './index.css';
 import '@fontsource/outfit';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-const items = [
-  { image: '1.jpg', link: 'https://google.com/', title: 'Item 1', description: 'This is pretty cool, right?' },
-  { image: '2.jpg', link: 'https://google.com/', title: 'Item 2', description: 'This is pretty cool, right?' },
-  { image: '3.jpg', link: 'https://google.com/', title: 'Item 3', description: 'This is pretty cool, right?' },
-  { image: '4.jpg', link: 'https://google.com/', title: 'Item 4', description: 'This is pretty cool, right?' }
-];
 
 root.render(
   <React.StrictMode>
@@ -53,11 +48,10 @@ root.render(
     <div className="bg"></div>
     <Nav />
     <Header />
+    <About />
     <Gallery />
+    <Projects />
     <Skills />
-    <div style={{ height: '400px', position: 'relative' }}>
-      <InfiniteMenu items={items} />
-    </div>
   </React.StrictMode>
 );
 

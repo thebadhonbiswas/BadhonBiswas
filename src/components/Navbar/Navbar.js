@@ -14,6 +14,7 @@ const Nav = () => {
   return (
     <nav>
       <img src={logo} alt="navlogo" />
+      {/*
       <div className="menubar">
         <img
           src={menuOpen ? closeIcon : menuIcon}
@@ -23,11 +24,12 @@ const Nav = () => {
           aria-label="Toggle menu"
         />
       </div>
-      <div className={`menu ${menuOpen ? "active" : ""}`}>
+     <div className={`menu ${menuOpen ? "active" : ""}`}>
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </div>
+      */}
     </nav>
   );
 };

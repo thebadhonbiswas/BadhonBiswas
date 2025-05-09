@@ -47,12 +47,12 @@ export default function Stack({
     cardsData.length
       ? cardsData
       : [
-        { id: 1, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/1.jpg" },
-        { id: 2, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/2.jpg" },
-        { id: 3, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/3.jpg" },
-        { id: 4, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/4.jpg" },
-        { id: 5, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/5.jpg" }
-      ]
+          { id: 1, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/1.jpg" },
+          { id: 2, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/2.jpg" },
+          { id: 3, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/3.jpg" },
+          { id: 4, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/4.jpg" },
+          { id: 5, img: "https://pub-e0de7afcc8184ea3870ae54d7fd21b62.r2.dev/5.jpg" }
+        ]
   );
 
   const sendToBack = (id) => {
@@ -76,7 +76,7 @@ export default function Stack({
     >
       {cards.map((card, index) => {
         const randomRotate = randomRotation
-          ? Math.random() * 10 - 5 // Random degree between -5 and 5
+          ? Math.random() * 10 - 5
           : 0;
 
         return (
@@ -106,7 +106,7 @@ export default function Stack({
             >
               <img
                 src={card.img}
-                alt={`card-${card.id}`}
+                alt="Badhon Biswas"
                 className="card-image"
               />
             </motion.div>
