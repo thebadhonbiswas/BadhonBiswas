@@ -20,30 +20,39 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Helmet>
-      <title>Badhon Biswas | Web Developer, UI/UX Designer & Editor</title>
-      <meta name="description" content="Welcome to the official portfolio of Badhon Biswas – a passionate web developer, UI/UX designer, and creative editor from Dhaka, Bangladesh." />
-      <meta name="keywords" content="Badhon Biswas, web developer, UI/UX designer, frontend developer, portfolio, creative editor, Bangladesh" />
-      <meta name="author" content="Badhon Biswas" />
+  <title>Badhon Biswas | Web Developer, UI/UX Designer & Editor</title>
+  <meta name="description" content="Welcome to the official portfolio of Badhon Biswas – a passionate web developer, UI/UX designer, and creative editor from Dhaka, Bangladesh." />
+  <meta name="keywords" content="Badhon Biswas, web developer, UI/UX designer, frontend developer, portfolio, creative editor, Bangladesh" />
+  <meta name="author" content="Badhon Biswas" />
 
-      {/* Open Graph Meta */}
-      <meta property="og:title" content="Badhon Biswas | Portfolio" />
-      <meta property="og:description" content="Explore projects and skills of Badhon Biswas – web developer and designer." />
-      <meta property="og:image" content="https://badhonbiswas.vercel.app/badhon's-portfolio.jpg" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://badhonbiswas.vercel.app/" />
+  {/* Open Graph Meta */}
+  <meta property="og:title" content="Badhon Biswas | Portfolio" />
+  <meta property="og:description" content="Explore projects and skills of Badhon Biswas – web developer and designer." />
+  <meta property="og:image" content="https://badhonbiswas.vercel.app/badhon's-portfolio.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://badhonbiswas.vercel.app/" />
 
-      {/* Twitter Card Meta */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Badhon Biswas | Portfolio" />
-      <meta name="twitter:description" content="Explore projects and skills of Badhon Biswas – web developer and designer." />
-      <meta name="twitter:image" content="https://badhonbiswas.vercel.app/badhon's-portfolio.jpg" />
-      <meta name="twitter:image:alt" content="Preview image of Badhon Biswas' portfolio website" />
+  {/* Twitter Card Meta */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Badhon Biswas | Portfolio" />
+  <meta name="twitter:description" content="Explore projects and skills of Badhon Biswas – web developer and designer." />
+  <meta name="twitter:image" content="https://badhonbiswas.vercel.app/badhon's-portfolio.jpg" />
+  <meta name="twitter:image:alt" content="Preview image of Badhon Biswas' portfolio website" />
 
-      {/* Favicon and Theme */}
-      <link rel="icon" href="/favicon.ico" />
-      <meta name="theme-color" content="#000000" />
-    </Helmet>
+  {/* Favicon and Theme */}
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="theme-color" content="#000000" />
 
+  {/* Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Badhon Biswas",
+      "url": "https://badhonbiswas.vercel.app"
+    })}
+  </script>
+</Helmet>
     <Analytics />
     <div className="bg"></div>
     <Nav />
