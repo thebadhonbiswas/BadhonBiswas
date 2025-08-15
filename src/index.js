@@ -45,13 +45,31 @@ root.render(
 
   {/* Structured Data */}
   <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Badhon Biswas",
-      "url": "https://badhonbiswas.vercel.app"
-    })}
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Badhon Biswas",
+  "jobTitle": "Web Developer and UI/UX Designer",
+  "url": "https://badhonbiswas.vercel.app",
+  "sameAs": [
+    "https://thebadhon.vercel.app",
+    "https://badhontech.vercel.app",
+    "https://badhonbiswas.vercel.app",
+    "https://about.me/thebadhonbiswas",
+    "https://facebook.com/thebadhonbiswas",
+    "https://instagram.com/thebadhonbiswas",
+    "https://x.com/thebadhonbiswas",
+    "https://youtube.com/@thebadhonbiswas",
+    "https://t.me/thebadhonbiswas"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Dhaka",
+    "addressCountry": "Bangladesh"
+  },
+  "description": "Professional web developer and UI/UX designer specializing in modern, responsive websites, including portfolios, ecommerce platforms, and interactive user experiences."
+}
+</script>
 </Helmet>
     <Analytics />
     <div className="bg"></div>
