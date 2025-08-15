@@ -20,57 +20,81 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Helmet>
-  <title>Badhon Biswas | Web Developer, UI/UX Designer & Editor</title>
-  <meta name="description" content="Welcome to the official portfolio of Badhon Biswas – a passionate web developer, UI/UX designer, and creative editor from Dhaka, Bangladesh." />
-  <meta name="keywords" content="Badhon Biswas, web developer, UI/UX designer, frontend developer, portfolio, creative editor, Bangladesh" />
-  <meta name="author" content="Badhon Biswas" />
+      <title>Badhon Biswas | Professional Web Developer, UI/UX Designer & Creative Editor in Bangladesh</title>
+      <meta
+        name="description"
+        content="Discover the portfolio of Badhon Biswas — a professional web developer, UI/UX designer, and creative editor from Dhaka, Bangladesh. Specializing in responsive website design, frontend development, and modern UI experiences."
+      />
+      <meta
+        name="keywords"
+        content="Badhon Biswas, professional web developer, UI/UX designer Bangladesh, frontend developer, responsive web design, creative editor, modern websites, portfolio, Dhaka"
+      />
+      <meta name="author" content="Badhon Biswas" />
 
-  {/* Open Graph Meta */}
-  <meta property="og:title" content="Badhon Biswas | Portfolio" />
-  <meta property="og:description" content="Explore projects and skills of Badhon Biswas – web developer and designer." />
-  <meta property="og:image" content="https://badhonbiswas.vercel.app/badhon's-portfolio.jpg" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://badhonbiswas.vercel.app/" />
+      {/* Open Graph Meta */}
+      <meta property="og:title" content="Badhon Biswas | Web Developer & UI/UX Designer in Bangladesh" />
+      <meta
+        property="og:description"
+        content="Explore the professional portfolio of Badhon Biswas — building responsive, user-friendly websites and creative digital designs."
+      />
+      <meta
+        property="og:image"
+        content="https://badhonbiswas.vercel.app/portfolio-preview.jpg"
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://badhonbiswas.vercel.app/" />
 
-  {/* Twitter Card Meta */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Badhon Biswas | Portfolio" />
-  <meta name="twitter:description" content="Explore projects and skills of Badhon Biswas – web developer and designer." />
-  <meta name="twitter:image" content="https://badhonbiswas.vercel.app/badhon's-portfolio.jpg" />
-  <meta name="twitter:image:alt" content="Preview image of Badhon Biswas' portfolio website" />
+      {/* Twitter Card Meta */}
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Badhon Biswas | Portfolio" />
+      <meta
+        name="twitter:description"
+        content="Portfolio of Badhon Biswas — web developer, UI/UX designer, and creative editor from Dhaka, Bangladesh."
+      />
+      <meta
+        name="twitter:image"
+        content="https://badhonbiswas.vercel.app/portfolio-preview.jpg"
+      />
+      <meta
+        name="twitter:image:alt"
+        content="Screenshot of Badhon Biswas' professional web portfolio"
+      />
 
-  {/* Favicon and Theme */}
-  <link rel="icon" href="/favicon.ico" />
-  <meta name="theme-color" content="#000000" />
+      {/* Favicon and Theme */}
+      <link rel="icon" href="/favicon.ico" />
+      <meta name="theme-color" content="#000000" />
 
-  {/* Structured Data */}
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Badhon Biswas",
-  "jobTitle": "Web Developer and UI/UX Designer",
-  "url": "https://badhonbiswas.vercel.app",
-  "sameAs": [
-    "https://thebadhon.vercel.app",
-    "https://badhontech.vercel.app",
-    "https://badhonbiswas.vercel.app",
-    "https://about.me/thebadhonbiswas",
-    "https://facebook.com/thebadhonbiswas",
-    "https://instagram.com/thebadhonbiswas",
-    "https://x.com/thebadhonbiswas",
-    "https://youtube.com/@thebadhonbiswas",
-    "https://t.me/thebadhonbiswas"
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Dhaka",
-    "addressCountry": "Bangladesh"
-  },
-  "description": "Professional web developer and UI/UX designer specializing in modern, responsive websites, including portfolios, ecommerce platforms, and interactive user experiences."
-}
-</script>
-</Helmet>
+      {/* Structured Data */}
+      <script type="application/ld+json">
+        {`
+          {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Badhon Biswas",
+            "jobTitle": "Professional Web Developer and UI/UX Designer",
+            "url": "https://badhonbiswas.vercel.app",
+            "sameAs": [
+              "https://thebadhon.vercel.app",
+              "https://badhontech.vercel.app",
+              "https://badhonbiswas.vercel.app",
+              "https://about.me/thebadhonbiswas",
+              "https://facebook.com/thebadhonbiswas",
+              "https://instagram.com/thebadhonbiswas",
+              "https://x.com/thebadhonbiswas",
+              "https://youtube.com/@thebadhonbiswas",
+              "https://t.me/thebadhonbiswas"
+            ],
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Dhaka",
+              "addressCountry": "Bangladesh"
+            },
+            "description": "Badhon Biswas is a professional web developer, UI/UX designer, and creative editor from Dhaka, Bangladesh, specializing in responsive website design, frontend development, and modern user experiences."
+          }
+        `}
+      </script>
+    </Helmet>
+
     <Analytics />
     <div className="bg"></div>
     <Nav />
